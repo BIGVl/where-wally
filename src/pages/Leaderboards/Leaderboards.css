@@ -1,0 +1,50 @@
+.leaderboards-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    padding-bottom: 10rem;
+}
+
+
+table {
+    font-family: 'Kanit', sans-serif;
+    width: 30vw;
+    border-collapse: collapse;
+    border: 1px solid black;
+    
+}   
+
+
+.player {
+
+    color: black;
+}
+
+.player:nth-child(even) {
+    background-color: var(--main-color);
+}
+
+th {
+    text-align: left;
+    background-color: var(--main-color);
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+
+
+th,td {
+border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+
+.ranking, .rankings {
+    width: 1rem;
+}
+
+.ranking {
+    text-align: center;
+}

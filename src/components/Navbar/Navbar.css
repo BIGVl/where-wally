@@ -1,0 +1,15 @@
+nav {
+    background-color: var(--main-color);
+    padding: 1rem;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    gap: 7rem;
+    padding-left: 10%;
+}
+
+.nav-start, .nav-leaderboards {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+
+}
