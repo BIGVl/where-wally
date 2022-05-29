@@ -33,26 +33,32 @@ const Leaderboards = () => {
 
   return (
     <div className="leaderboards-page">
-      <table className="leaderboard">
-        <thead>
-          <tr>
-            <th className="rankings">Rk.</th>
-            <th>Name</th>
-            <th>Time</th>
-          </tr>
-        </thead>
-        <tbody>
-          {players.map((player: Players, i: number) => {
-            return (
-              <tr key={i} className="player">
-                <td className="ranking">{i + 1}. </td>
-                <td className="p-name"> {player.name}</td>
-                <td className="p-time"> {player.time} seconds</td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+      {players.length === 0 ? (
+        <div className="no-leader">
+          No results yet. <div> Play a game and register it to be the first one on the leaderboard! </div>{' '}
+        </div>
+      ) : (
+        <table className="leaderboard">
+          <thead>
+            <tr>
+              <th className="rankings">Rk.</th>
+              <th>Name</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            {players.map((player: Players, i: number) => {
+              return (
+                <tr key={i} className="player">
+                  <td className="ranking">{i + 1}. </td>
+                  <td className="p-name"> {player.name}</td>
+                  <td className="p-time"> {player.time} seconds</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      )}
     </div>
   );
 };

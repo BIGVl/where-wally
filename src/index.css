@@ -10,3 +10,14 @@ body {
     margin: 0;
     box-sizing: border-box;
 }
+
+.introduction {
+    position: absolute;
+    font-family: 'Kanit', sans-serif;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 2rem;
+    color: var(--main-color);
+    
+}
