@@ -67,10 +67,10 @@ const AddToBoard = ({ time }: Props) => {
         <form onSubmit={onSubmit}>
           <legend>Add your score to the leaderboard .</legend>
           <p>Good job !</p>
-          <p className="result-secs">
+          <div className="result-secs">
             Time : <p className="time-p">{time}</p>
             seconds
-          </p>
+          </div>
           <label htmlFor="name">Enter your name : </label>
           <input type="text" id="name" className="name" onChange={onChange} value={name} />
           {errorMsg && <p className="error-name">{errorMsg}</p>}

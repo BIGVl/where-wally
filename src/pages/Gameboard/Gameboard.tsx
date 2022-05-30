@@ -22,6 +22,7 @@ const Gameboard = () => {
         const chars = data.map((char) => {
           return char.character;
         });
+        console.log(chars);
         return chars;
       });
     });

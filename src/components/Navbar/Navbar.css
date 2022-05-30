@@ -7,7 +7,7 @@ nav {
     padding-left: 10%;
 }
 
-.nav-start, .nav-leaderboards {
+.nav-start, .nav-leaderboards, .nav-home {
     text-decoration: none;
     color: white;
     font-size: 1.4rem;

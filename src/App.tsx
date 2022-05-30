@@ -4,6 +4,7 @@ import Gameboard from './pages/Gameboard/Gameboard';
 import Start from './components/Start/Start';
 import Navbar from './components/Navbar/Navbar';
 import Leaderboards from './pages/Leaderboards/Leaderboards';
+import Home from './pages/Home/Home';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="start" element={<Start />} />
           <Route path="start/gameboard" element={<Gameboard />} />
           <Route path="leaderboards" element={<Leaderboards />} />
